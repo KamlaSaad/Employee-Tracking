@@ -1,0 +1,129 @@
+<html onload="Month()">
+    <head>
+        <title>Attendance Report</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../style/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="parent">
+            <nav>
+                <span class="menu"><i class="fa fa-th"></i></span>
+                <select name="lang">
+                    <option value="en">English</option>
+                    <option value="arb">Arabic</option>
+                </select>
+                <img src="../imgs/img2.jpg" class="profile-img">
+                <select id="link">
+                    <!-- employee name -->
+                    <option value="profile">Kamla</option>
+                    <option value="profile">Profile</option>
+                    <option value="changePass">Change Password</option>
+                    <option value="logout">Logout</option>
+                </select>
+            </nav>
+            <div class="child">
+                <aside>
+                    <div class="logo">
+                        <h1>Tra<span class="h1">ckig</span></h1>
+                    </div>
+                    <div class="wel">
+                        <div class="row">
+                            <div class="col col-4">
+                                <img src="../imgs/img2.jpg" class="profile-img">
+                            </div>
+                            <div class="col col-8">
+                                <h6 class="welcome">Welcome</h6>
+                                <!-- employee name -->
+                                <h6>Kamla Saad</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages">
+                        <div>
+                            <p>
+                                <i class="fa fa-dashboard"></i>
+                                <a href="dashboard.html">Dashboard</a>
+                                <side></side>
+                            </p>
+                        </div>
+    
+                        <div>
+                            <p>
+                                <i class="fa fa-minus-square"></i>
+                                <a href="attendance.html">Attendance</a>
+                                <side></side>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <i class="fa fa-hotel"></i>
+                                <span>Leave</span>
+                                <next class="fa fa-angle-down"></next>
+                                <side></side>
+                            </p>
+                            <span class="links">
+                                <a href="apply leave.html">Apply Leave</a>
+                                <a href="leave.html">Leave</a>
+                            </span>
+                        </div>
+    
+                        <div>
+                            <p>
+                                <i class="fa fa-plane"></i>
+                                <a href="#">Holiday</a>
+                                <side></side>
+                            </p>
+                        </div>
+                        <div>
+                            <p id="logout">
+                                <i class="fa fa-sign-out"></i>
+                                <span>Logout</span>
+                                <side></side>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="child">
+             <div class="attendance">
+                 <div class="content">
+                    <h5>Attendance Report</h5>
+                    <hr>
+                    <div class="row">
+                        <div class="col col-lg-4 col-sm-6 col-12">
+                            <label>Year</label>
+                            <input type="number" class="input"><br>
+                        </div>
+                        <div class="col col-lg-4 col-sm-6 col-12">
+                            <label>Month</label>
+                            <select id="month" class="input"></select>
+                        </div>
+                        <div class="col col-lg-4 col-sm-6 col-12">
+                            <br><button class="save" id="show-report" onclick="Show(this,document.getElementById('emp-report'),'Show Report','Hide Report')">Show Report</button>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="content" id="emp-report">
+                 </div>
+                </div>
+               </div>
+           </div>
+        </div>
+        <script src="../scripts/bootstrap.min.js"></script>
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/propper.js"></script>
+        <script src="js.js"></script>
+        <script>
+            var select = document.getElementById("month"),
+            months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            for (var i = 0; i < months.length; i++) {
+                var opt = document.createElement("option");
+                opt.value = months[i];
+                opt.innerHTML = months[i];
+                select.appendChild(opt);
+                //select.innerHTML = "<option value='" + months[i] + "'" + months[i] + "</option>";
+            }
+        </script>
+    </body>
+</html>

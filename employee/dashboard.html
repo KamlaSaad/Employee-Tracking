@@ -1,0 +1,255 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parent">
+        <nav>
+            <span class="menu"><i class="fa fa-th"></i></span>
+            <select name="lang">
+                <option value="en">English</option>
+                <option value="arb">Arabic</option>
+            </select>
+            <img src="../imgs/img2.jpg" class="profile-img">
+            <select id="link">
+                <!-- employee name -->
+                <option value="profile">Kamla</option>
+                <option value="profile">Profile</option>
+                <option value="changePass">Change Password</option>
+                <option value="logout">Logout</option>
+            </select>
+
+        </nav>
+        <div class="child">
+            <aside>
+                <div class="logo">
+                    <h1>Tra<span class="h1">ckig</span></h1>
+                </div>
+                <div class="wel">
+                    <div class="row">
+                        <div class="col col-4">
+                            <img src="../imgs/img2.jpg" class="profile-img">
+                        </div>
+                        <div class="col col-8">
+                            <h6 class="welcome">Welcome</h6>
+                            <!-- employee name -->
+                            <h6>Kamla Saad</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages">
+                    <div>
+                        <p class="active">
+                            <i class="fa fa-dashboard"></i>
+                            <a href="dashboard.html">Dashboard</a>
+                            <side></side>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            <i class="fa fa-minus-square"></i>
+                            <a href="attendance.html">Attendance</a>
+                            <side></side>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa fa-hotel"></i>
+                            <span>Leave</span>
+                            <next class="fa fa-angle-down"></next>
+                            <side></side>
+                        </p>
+                        <span class="links">
+                            <a href="apply leave.html">Apply Leave</a>
+                            <a href="leave.html">Leave</a>
+                        </span>
+                    </div>
+
+                    <div>
+                        <p>
+                            <i class="fa fa-plane"></i>
+                            <a href="holiday.html">Holiday</a>
+                            <side></side>
+                        </p>
+                    </div>
+                    <div>
+                        <p id="logout">
+                            <i class="fa fa-sign-out"></i>
+                            <span>Logout</span>
+                            <side></side>
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="child">
+            <div class="content">
+                <h5>Dashboard</h5>
+                <div class="hr first"></div>
+                <div class="row">
+                    <div class="col col-xl-6 col-12">
+                        <br>
+                        <div class="box">
+                            <h5>Daily Attendance</h5>
+                            <div class="hr"></div>
+                            <div class="row">
+                                <div class="col-6">
+<!--                                    <div class="clock">-->
+<!--                                        <div class="hand hour"></div>-->
+<!--                                        <div class="hand minute"></div>-->
+<!--                                        <div class="hand second"></div>-->
+<!--                                    </div>-->
+                                    <div class="clock">
+                                        <div class="hour">
+                                            <div class="h" id="h"></div>
+                                        </div>
+                                        <div class="min">
+                                            <div class="m" id="m"></div>
+                                        </div>
+                                        <div class="sec">
+                                            <div class="s" id="s"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <button class="start" onclick="startWork(this)">Start Working Today</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="box">
+                            <h5>Qoute of The Day</h5>
+                            <div class="qoute">
+                                <p>Sucesss usually comes to those who are too busy to be looking for it</p>
+                                <span>-Henry David Thoreau</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-6 col-12">
+                        <div class="notice-board box">
+                            <h5>Notice Board</h5>
+                            <div class="hr"></div>
+                            <!-- for loop on  notice board-->
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="date-box">
+                                        <!-- notice date -->
+                                        <span>Fri,08 May</span>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="notice">
+                                        <!-- notice title -->
+                                        <h6>New Event</h6>
+                                        <!-- notice date -->
+                                        <span class="red">Fri,08 May 2020</span>
+                                        <span>posted by Admin</span>
+                                        <!-- notice description -->
+                                        <p>New event date announced </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+                            <!-- for loop end -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="date-box">
+                                        <!-- notice date -->
+                                        <span>Fri,08 May</span>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="notice">
+                                        <!-- notice title -->
+                                        <h6>New Event</h6>
+                                        <!-- notice date -->
+                                        <span class="red">Fri,08 May 2020</span>
+                                        <span>posted by Admin</span>
+                                        <!-- notice description -->
+                                        <p>New event date announced </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="date-box">
+                                        <!-- notice date -->
+                                        <span>Fri,08 May</span>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="notice">
+                                        <!-- notice title -->
+                                        <h6>New Event</h6>
+                                        <!-- notice date -->
+                                        <span class="red">Fri,08 May 2020</span>
+                                        <span>posted by Admin</span>
+                                        <!-- notice description -->
+                                        <p>New event date announced </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="date-box">
+                                        <!-- notice date -->
+                                        <span>Fri,08 May</span>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="notice">
+                                        <!-- notice title -->
+                                        <h6>New Event</h6>
+                                        <!-- notice date -->
+                                        <span class="red">Fri,08 May 2020</span>
+                                        <span>posted by Admin</span>
+                                        <!-- notice description -->
+                                        <p>New event date announced </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="date-box">
+                                        <!-- notice date -->
+                                        <span>Fri,08 May</span>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="notice">
+                                        <!-- notice title -->
+                                        <h6>New Event</h6>
+                                        <!-- notice date -->
+                                        <span class="red">Fri,08 May 2020</span>
+                                        <span>posted by Admin</span>
+                                        <!-- notice description -->
+                                        <p>New event date announced </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/propper.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>

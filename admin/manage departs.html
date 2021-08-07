@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title>Manage Departments</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../style/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="parent">
+            <nav>
+                <span class="menu"><i class="fa fa-th"></i></span>
+                <select name="lang">
+                    <option value="en">English</option>
+                    <option value="arb">Arabic</option>
+                </select>
+                <img src="../imgs/img2.jpg" class="profile-img">
+                <select id="link">
+                    <option value="profile">Profile</option>
+                    <option value="config">Configuration</a></option>
+                    <option value="changePass">Change Password</option>
+                    <option value="logout">Logout</option>
+                </select>
+            </nav>
+            <div class="child">
+                <aside>
+                    <div class="logo"><h1>Tra<span class="h1">ckig</span></h1></div>
+                    <div class="wel">
+                        <div class="row">
+                            <div class="col col-4">
+                                <img src="../imgs/img2.jpg" class="profile-img">
+                            </div>
+                            <div class="col col-8">
+                                <h6>Welcome</h6>
+                                <h6>Adminstrator</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages">
+                         <div>
+                             <p>
+                                 <i class="fa fa-dashboard" style="color: cornflowerblue;"></i>
+                                 <span><a href="dashboard.html">Dashboard</a></span>
+                                 <side></side>
+                             </p>
+                         </div>
+                         <div>
+                             <p>
+                                 <i class="fa fa-th" style="color: rgb(14, 199, 14);"></i>
+                                 <span>Departments</span>
+                                 <next class="fa fa-angle-down"></next>
+                                 <side></side>
+                             </p>
+                             <span class="links">
+                                 <a href="add depart.html">Add Department</a>
+                                 <a href="manage departs.html">Manage Departments</a>
+                             </span>
+                         </div>
+                         <div>
+                             <p>
+                                 <i class="fa fa-users" style="color: yellow;"></i>
+                                 <span>Employees</span>
+                                 <next class="fa fa-angle-down"></next>
+                                 <side></side>
+                             </p>
+                             <span class="links">
+                                 <a href="add employee.html">Add Employee</a>
+                                 <a href="manage employee.html">Manage Employees</a>
+                             </span>
+                         </div>
+                         <div>
+                             <p>
+                                 <i class="fa fa-minus-square" style="color: rgb(96, 227, 245);"></i> 
+                                 <span>Attendance</span>
+                                 <next class="fa fa-angle-down"></next>
+                                 <side></side>
+                             </p>
+                             <span class="links">
+                                 <a href="daily attendance.html">Daily Attendance</a>
+                                 <a href="attendance report.html">Attendance Report</a>
+                             </span>
+                         </div>
+                         <div>
+                             <p>
+                                 <i class="fa fa-hotel" style="color: blue;"></i>
+                                 <span>Leave</span>
+                                 <next class="fa fa-angle-down"></next>
+                                 <side></side>
+                             </p>
+                             <span class="links">
+                                 <a href="add leave.html">Add Leave</a>
+                                 <a href="manage leave.html">Manage Leave</a>
+                             </span>
+                         </div>
+                         <div>
+                             <p>
+                                 <i class="fa fa-archive" style="color: orangered;"></i>
+                                 <span>Daily</span>
+                                 <next class="fa fa-angle-down"></next>
+                                 <side></side>
+                             </p>
+                             <span class="links">
+                                <a href="add notice.html">Add Notice</a>
+                                <a href="add quite.html">Add Quite</a>
+                            </span>
+                         </div>
+                         <div>
+                             <p>
+                                 <i class="fa fa-plane" style="color: blue;"></i>
+                                 <span>Holiday</span>
+                                 <next class="fa fa-angle-down"></next>
+                                 <side></side>
+                             </p>
+                             <span class="links">
+                                <a href="add holiday.html">Add Holiday</a>
+                                <a href="manage holiday.html">Manage Holiday</a>
+                            </span>
+                         </div>
+                         <div>
+                             <p>
+                                 <i class="fa fa-bicycle" style="color: rgb(40, 233, 240);"></i>
+                                 <span><a href="activity log.html">Activity Log</a></span>
+                                 <side></side>
+                             </p>
+                         </div>
+                         <div>
+                             <p id="logout">
+                                 <i class="fa fa-sign-out" style="color: rgb(14, 199, 14);"></i>
+                                 <span>Logout</span>
+                                 <side></side>
+                             </p>
+                         </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="child">
+             <div class="content">
+                 <div class="emp">
+                    <h5>Manage Departments</h5>
+                    <hr>
+                    <span class="show">
+                        <label>show</label>
+                        <input type="number" min="1" max="100" class="input">
+                        <label>entries</label>
+                    </span>
+                    <span class="search">
+                       <label>search</label>
+                       <input type="text" min="1" max="100" class="input">
+                   </span><br><br>
+                   <div class="scroll">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Head Id</th>
+                            <th scope="col">Total Employees</th>
+                            <th scope="col">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>SE</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td>
+                                 <button class="edit">
+                                     <i class="fa fa-edit"></i>
+                                     Edit
+                                 </button>
+                                 <button class="delete">
+                                     <i class="fa fa-close"></i>
+                                     Delete
+                                 </button>
+                            </td>
+                          </tr>
+                          <tr>
+                             <th scope="row">2</th>
+                             <td>IT</td>
+                             <td>3</td>
+                             <td>10</td>
+                             <td>
+                                  <button class="edit">
+                                      <i class="fa fa-edit"></i>
+                                      Edit
+                                  </button>
+                                  <button class="delete">
+                                      <i class="fa fa-close"></i>
+                                      Delete
+                                  </button>
+                             </td>
+                           </tr>
+                           <tr>
+                             <th scope="row">3</th>
+                             <td>Accounting</td>
+                             <td>8</td>
+                             <td>8</td>
+                             <td>
+                                  <button class="edit">
+                                      <i class="fa fa-edit"></i>
+                                      Edit
+                                  </button>
+                                  <button class="delete">
+                                      <i class="fa fa-close"></i>
+                                      Delete
+                                  </button>
+                             </td>
+                           </tr>
+                        </tbody>
+                    </table>
+                   </div>
+                </div>
+               </div>
+           </div>
+        </div>
+        <script src="../scripts/bootstrap.min.js"></script>
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/propper.js"></script>
+        <script src="js.js"></script>
+    </body>
+</html>

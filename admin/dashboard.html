@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parent">
+        <nav>
+            <span class="menu"><i class="fa fa-th"></i></span>
+            <select name="lang">
+                <option value="en">English</option>
+                <option value="arb">Arabic</option>
+            </select>
+            <img src="../imgs/img2.jpg" class="profile-img">
+            <select id="link">
+                <option value="profile">Admistrator</option>
+                <option value="profile">Profile</option>
+                <option value="changePass">Change Password</option>
+                <option value="logout">Logout</option>
+            </select>
+
+        </nav>
+        <div class="child">
+            <aside>
+                <div class="logo">
+                    <h1>Tra<span class="h1">ckig</span></h1>
+                </div>
+                <div class="wel">
+                    <div class="row">
+                        <div class="col col-4">
+                            <img src="../imgs/img2.jpg" class="profile-img">
+                        </div>
+                        <div class="col col-8">
+                            <h6>Welcome</h6>
+                            <h6>Adminstrator</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages">
+                    <div>
+                        <p>
+                            <i class="fa fa-dashboard" style="color: cornflowerblue;"></i>
+                            <a href="dashboard.html">Dashboard</a>
+                            <side></side>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa fa-th" style="color: rgb(14, 199, 14);"></i>
+                            <span>Departments</span>
+                            <next class="fa fa-angle-down"></next>
+                            <side></side>
+                        </p>
+                        <span class="links">
+                            <a href="add depart.html">Add Department</a>
+                            <a href="manage departs.html">Manage Departments</a>
+                        </span>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa fa-users" style="color: yellow;"></i>
+                            <span>Employees</span>
+                            <next class="fa fa-angle-down"></next>
+                            <side></side>
+                        </p>
+                        <span class="links">
+                            <a href="add employee.html">Add Employee</a>
+                            <a href="manage employee.html">Manage Employees</a>
+                        </span>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa fa-minus-square" style="color: rgb(96, 227, 245);"></i>
+                            <span>Attendance</span>
+                            <next class="fa fa-angle-down"></next>
+                            <side></side>
+                        </p>
+                        <span class="links">
+                            <a href="daily attendance.html">Daily Attendance</a>
+                            <a href="attendance report.html">Attendance Report</a>
+                        </span>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa fa-hotel" style="color: blue;"></i>
+                            <span>Leave</span>
+                            <next class="fa fa-angle-down"></next>
+                            <side></side>
+                        </p>
+                        <span class="links">
+                            <a href="add leave.html">Add Leave</a>
+                            <a href="manage leave.html">Manage Leave</a>
+                        </span>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa fa-archive" style="color: orangered;"></i>
+                            <span>Daily</span>
+                            <next class="fa fa-angle-down"></next>
+                            <side></side>
+                        </p>
+                        <span class="links">
+                            <a href="add notice.html">Add Notice</a>
+                            <a href="manage notice.html">Manage Notice</a>
+                            <a href="add quite.html">Add Quite</a>
+                            <a href="manage quite.html">Manage Quite</a>
+                        </span>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa fa-plane" style="color: blue;"></i>
+                            <span>Holiday</span>
+                            <next class="fa fa-angle-down"></next>
+                            <side></side>
+                        </p>
+                        <span class="links">
+                            <a href="add holiday.html">Add Holiday</a>
+                            <a href="manage holiday.html">Manage Holiday</a>
+                        </span>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa fa-bicycle" style="color: rgb(40, 233, 240);"></i>
+                            <a href="activity log.html">Activity Log</a>
+                            <side></side>
+                        </p>
+                    </div>
+                    <div>
+                        <p id="logout">
+                            <i class="fa fa-sign-out" style="color: rgb(14, 199, 14);"></i>
+                            <span>Logout</span>
+                            <side></side>
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="child">
+            <div class="content">
+                <h6>Dashboard</h6>
+                <hr>
+                <div class="row">
+                    <div class="col col-lg-3 col-6">
+                        <div class="box">
+                            <span>2</span>
+                            <i class="fa fa-group" style="color:green;"></i>
+                            <p>Total Employees</p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-6">
+                        <div class="box">
+                            <span>2</span>
+                            <i class="fa fa-th" style="color:rgb(240, 237, 75);"></i>
+                            <p>Total Departments</p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-6">
+                        <div class="box">
+                            <span>2</span>
+                            <i class="fa fa-user" style="color:blue;"></i>
+                            <p>Present Today</p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-6">
+                        <div class="box">
+                            <span>2</span>
+                            <i class="fa fa-group" style="color:rgb(70, 16, 172);"></i>
+                            <p>On Leave Today</p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-9">
+                        <div class=" box lg-box">
+                            <div class="sucess">
+                                <p>Sucesss usually comes to those who are too busy to be looking for it</p>
+                                <div>-Henry David Thoreau</div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3">
+                        <div class="activity-log box">
+                            <h5>Activity Log</h5>
+                            <hr>
+                            <div class="activity">
+                                Employee #33 updated by Admin on date 10/30/2020
+                            </div>
+                            <div class="activity">
+                                Employee #31 updated by Admin on date 10/30/2020
+                            </div>
+                            <div class="activity">
+                                Employee #33 added by Admin on date 10/30/2020
+                            </div>
+                            <button class="more">View all actvity log</button>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/propper.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
